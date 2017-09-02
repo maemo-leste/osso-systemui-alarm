@@ -573,8 +573,7 @@ NotifyNotification *alarm_notify_notification_calendar(const char *sound_file)
   if (sound_file && (notify_is_initted() ||
                      notify_init("notify-calendar-alarm"))) {
     n = notify_notification_new("alarm", 0,
-                                "/usr/share/icons/hicolor/10x10/hildon/qgn_list_smiley_angry.png",
-                                NULL);
+                                "/usr/share/icons/hicolor/10x10/hildon/qgn_list_smiley_angry.png");
     notify_notification_set_category(n, "alarm-event");
     notify_notification_set_timeout(n, 0);
     notify_notification_set_hint_string(n, "alarm-type", "calendar");
@@ -603,8 +602,7 @@ NotifyNotification *alarm_notify_notification_clock(const char *sound_file)
         return NULL;
 
       n = notify_notification_new("alarm", 0,
-                                  "/usr/share/icons/hicolor/10x10/hildon/qgn_list_smiley_angry.png",
-                                  NULL);
+                                  "/usr/share/icons/hicolor/10x10/hildon/qgn_list_smiley_angry.png");
       notify_notification_set_category(n, "alarm-event");
       notify_notification_set_timeout(n, 0);
       notify_notification_set_hint_string(n, "alarm-type", "clock");
