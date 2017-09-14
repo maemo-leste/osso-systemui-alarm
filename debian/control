@@ -16,6 +16,6 @@ Description: Alarm dialog
 Package: osso-systemui-alarm-dbg
 Architecture: any
 Section: devel
-Depends: osso-systemui-alarm (= ${Source-Version})
+Depends: osso-systemui-alarm (= ${source:Version})
 Description: Alarm dialog debug symbls
  This package contains the Alarm dialog debug symbls
